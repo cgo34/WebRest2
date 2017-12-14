@@ -1,0 +1,62 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ft.epsi.mtp.i42.ws.rest;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+/**
+ *
+ * @author Geoffroy
+ */
+public class Train {
+    private String numTrain;
+    private String villeDepart;
+    private String villeArrivee;
+    private int heureDepart; // Format : 1230 = 12h30
+    
+    public Train(){
+        
+    }
+    
+    public Train(String numTrain, String villeDepart, String villeArrivee, int heureDepart){
+        this.numTrain = numTrain;
+        this.villeDepart = villeDepart;
+        this.villeArrivee = villeArrivee;
+        this.heureDepart = heureDepart;
+    }
+    
+    public int getHeureDepart(){
+        return heureDepart;
+    }
+    
+    public void setHeureDepart(int heureDepart){
+        this.heureDepart = heureDepart;
+    }
+    
+    public String getNumTrain(){
+        return numTrain;
+    }
+    
+    public void setNumTrain(String numTrain){
+        this.numTrain = numTrain;
+    }
+    
+    public String getvilleDepart(){
+        return villeDepart;
+    }
+    
+    public void setVilleDepart(String villeDepart){
+        this.villeDepart = villeDepart;
+    }
+    
+    public String getvilleArrivee(){
+        return villeArrivee;
+    }
+    
+    public void setVilleArrivee(String villeArrivee){
+        this.villeArrivee = villeArrivee;
+    }
+}
